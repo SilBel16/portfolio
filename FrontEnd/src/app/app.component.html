@@ -5,3 +5,53 @@
 <app-skills></app-skills>
 <app-proyectos></app-proyectos>
 <app-footer></app-footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+
+      //Cambia el estilo del input a visible
+      //toma el valor del texto del parrafo con id "text-acercade"
+      //lo muestra en consola
+      function cambiar_parrafo() {
+        document.getElementById("edit-acercade").style.display="block";
+        let texto = document.getElementById("text-acercade").innerText;
+        console.log(texto);
+      };
+
+      function myFunction2(valor) {
+        document.getElementById("text-acercade").innerText=valor;
+      };
+
+      function logMessage(message) {
+        console.log(message + "<br>");
+      }
+
+      //controlo si presiono un enter
+    let textarea=document.getElementById("edit-acercade")
+    textarea.addEventListener('keyup', (e) => {
+      logMessage('Key "${e.key}" released [event: keyup]');
+      if (e.key=="Enter") {
+        document.getElementById("edit-acercade").style.display="none"
+      }
+    });
+
+    //carga el contenido de un archivo de texto 
+    //y lo muestra en el parrafo
+
+    function showFile(input) {
+      let file = input.file[0];
+      alert('File name: $(file.name)'); //e. g my.png
+      alert('Last modified: $(file.lastModified)'); //e. g 1552030408824
+    
+      let reader = new FileReader();
+      reader.readAsText(file);
+      reader.onload = function() {
+        console.log(reader.result);
+        document.getElementById("text-acercade").innerText=reader.result;
+      };
+      reader.onerror = function () {
+        console.log(reader.error);
+      };
+    }
+
+    </script>
