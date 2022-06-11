@@ -22,7 +22,7 @@
         <h2>Soft Skills</h2>
         <div class="divider claro"></div>   
         <div *ngFor="let habil of habilidadesBlandasList" class="softskills">
-        <h5 class="softskills"><img src="{{habil.icon}}"> {{habil.skill}}</h5>    
+        <h5 class="softskills"><img [src]="habil.icon"> {{habil.skill}}</h5>    
       </div>
       </div>
 

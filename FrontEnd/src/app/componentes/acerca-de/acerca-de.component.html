@@ -18,11 +18,12 @@
             <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
           </div>
         <!--  <input type="file" id="file1" onchange="showfile(this)"> -->
-          <a download="CV_silvina-belcastro.png" href="../../../assets/CV_Silvina-Belcastro.png"><button class="download-cv button">Download CV</button></a>
+          <a download="{{miPortfolio.cv}}" href="{{miPortfolio.cv}}"><button class="download-cv button">Download CV</button></a>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-          <img class="img-fluid" id="foto_perfil" src="../../../assets/Perfil-chica.jpg" alt="foto de perfil Silvina">
+          <img class="img-fluid" id="foto_perfil" [src]="miPortfolio.profileImg" alt="foto de perfil Silvina">
         </div>
       </div>
   </div>              
   </section>
+

@@ -11,7 +11,7 @@
     <div class="row project">
         <div *ngFor="let proyecto of proyectosList" class="col-sm-4">
           <div class="card">
-          <img class="card-img-top" src="{{proyecto.img}}" alt="Card image">
+          <img class="card-img-top" [src]="proyecto.img" alt="Card image">
           <div class="card-body">
             <h4 class="card-title">{{proyecto.title}}</h4>
             <p class="card-text">{{proyecto.description}}</p>

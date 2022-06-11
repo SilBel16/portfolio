@@ -6,8 +6,10 @@
     "twitter": "https://twitter.com",
     "facebook": "https://es-la.facebook.com/",
     "name": "Silvina Luján Belcastro",
+    "profileImg": "assets/Perfil-chica.jpg",
     "position": "Programadora web full stack junior",
     "aboutMe": "Soy una persona responsable, creativa, con gran capacidad de aprendizaje y habilidades en la comunicación.",
+    "cv": "assets/About.jpg",
     "actualWork": "Profesora de educación física - Nivel Inicial y Primario",  
     "experience": [
         {

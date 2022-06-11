@@ -5,7 +5,7 @@
     <div class="row">
             <div *ngFor="let educacion of educacionList" align="center" class="estudio col-xs-6 col-sm-6 col-md-2 col-lg-2">
               <a href="{{educacion.url}}" target="_blank">
-              <img class="educacion-img img-fluid" src="{{educacion.img}}" alt="logo Argentina programa">
+              <img class="educacion-img img-fluid" [src]="educacion.img" alt="logo Argentina programa">
               </a>
               <div class="estudio col-xs-6 col-sm-6 col-md-10 col-lg-10">
               <p>{{educacion.title}}<br>{{educacion.end}}</p> 
