@@ -1,4 +1,17 @@
 h4 {
-    padding-bottom: 1em;
+    margin-top: -1em;
+    margin-bottom: 1em;
     text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+.workplace {
+    margin-left: -1em;
+}
+
+.row {
+    margin-bottom: 1em;
 }

@@ -1,7 +1,166 @@
-{
-"name": "Silvina Luján Belcastro",
-"position": "Programadora web full stack junior",
-"acerca": "Soy una persona responsable, creativa, con mucha capacidad para el aprendizaje y habilidades en la comunicación."
+{   
+    "github": "https://github.com/SilBel16",
+    "linkedin": "https://www.linkedin.com/in/silvina-belcastro/",
+    "codepen": "https://codepen.io/Sil_Bel16",
+    "instagram": "https://www.instagram.com/?hl=es-la",
+    "twitter": "https://twitter.com",
+    "facebook": "https://es-la.facebook.com/",
+    "name": "Silvina Luján Belcastro",
+    "position": "Programadora web full stack junior",
+    "aboutMe": "Soy una persona responsable, creativa, con gran capacidad de aprendizaje y habilidades en la comunicación.",
+    "actualWork": "Profesora de educación física - Nivel Inicial y Primario",  
+    "experience": [
+        {
+        "actualWork": "Profesora de educación física",
+        "name": "Instituto San José de Flores",
+        "start": "2013",
+        "end": "Actualidad"
+        },
+        {
+        "actualWork": "Profesora de educación física",
+        "name": "Instituto Nuestra Señora de Luján de San José de Flores",
+        "start": "2018",
+        "end": "Actualidad"
+        },
+        {
+        "actualWork": "Profesora de educación física",
+        "name": "Instituto Elisa Harilaos",
+        "start": "2019",
+        "end": "Actualidad"
+        }
+    ],
+    
+    "education": [
+        {
+        "school": "Argentina Programa",
+        "img": "assets/logo-AP1.jpg",
+        "url": "https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa",
+        "title": "Programadora web full stack junior",
+        "end": "En proceso"
+        },
+        {
+        "school": "Codo a Codo",
+        "img": "assets/codo_a_codo_logo.jpg",
+        "url": "https://agenciadeaprendizaje.bue.edu.ar/curso/testing-automatizado-y-qa-control-de-calidad-de-software-cac-4-0/",
+        "title": "Testing - QA",
+        "end": "07/22"
+        },
+        {
+        "school": "ScrumStudy",
+        "img": "assets/ScrumStudy-logo.jpg",
+        "url": "https://www.scrumstudy.com/",
+        "title": "Scrum Fundamentals Certified (SFC™) Certification",
+        "end": "03/22"
+        },
+        {
+        "school": "FreeCodeCamp",
+        "img": "assets/FreeCodeCamp_logo.png",
+        "url": "https://www.freecodecamp.org/learn/responsive-web-design/",
+        "title": "Diseño Web Responsivo",
+        "end": "04/22"
+        },
+        {
+        "school": "SoloLearn",
+        "img": "assets/sololearn_logo.png",
+        "url": "https://www.sololearn.com/home",
+        "title": "Web Development Fundamentals course",
+        "end": "02/22"
+        },
+        {
+        "school": "",
+        "img": "assets/logo-fundacionTelefonica.jpg",
+        "url": "https://conectaempleo-formacion.fundaciontelefonica.com/argentina",
+        "title": "Gestión de Proyectos con Metodologías Ágiles y Enfoques Lean",
+        "end": "02/22"
+        }
+    ],
+    "skillsHard": [
+        {
+        "skill": "HTML",
+        "icon": "fa-brands fa-html5",
+        "progress": "75",
+        "label": "Avanzado"
+        },
+        {
+        "skill": "CSS",
+        "icon": "fa-brands fa-css3-alt",
+        "progress": "75",
+        "label": "Avanzado"
+        },
+        {
+        "skill": "Bootstrap",
+        "icon": "fa-brands fa-bootstrap",
+        "progress": "50",
+        "label": "Intermedio"
+        },
+        {
+        "skill": "Javascript",
+        "icon": "fa-brands fa-js",
+        "progress": "50",
+        "label": "Intermedio"
+        },
+        {
+        "skill": "Typescript",
+        "icon": "assets/icons8-typescript-241.png",
+        "progress": "25",
+        "label": "Básico"
+        }, 
+        {
+        "skill": "Ingles - Nivel Escrito",
+        "icon": "fa-solid fa-file-lines",
+        "progress": "75",
+        "label": "Avanzado"
+        },
+        {
+        "skill": "Ingles - Nivel Oral",
+        "icon": "fa-solid fa-comment",
+        "progress": "25",
+        "label": "Básico"
+        }      
+
+    ],
+    "skillsSoft": [
+        {
+        "skill": "Habilidades comunicativas",
+        "icon": "assets/icons8-teamwork-48.png"
+        },
+        {
+        "skill": "Creatividad",
+        "icon": "assets/icons8-creativity-64.png"
+        }, 
+        {
+        "skill": "Resolución de problemas",
+        "icon": "assets/icons8-puzzle-64.png"
+        },
+        {
+        "skill": "Adaptabilidad",
+        "icon": "assets/icons8-adaptation-64.png"
+        },
+        {
+        "skill": "Trabajo en equipo",
+        "icon": "assets/icons8-teamwork-64.png"
+        } 
+    ],
+    "projects": [
+        {
+        "img": "assets/project-tributo.png",
+        "title": "Tribute page",
+        "description":"Certificación Diseño Web Responsivo en freeCodeCamp",
+        "url": "https://codepen.io/Sil_Bel16/pen/xxPjPpj"
+        },
+        {
+        "img": "assets/project-TDP.png",
+        "title": "Technical Documentation Page",
+        "description":"Certificación Diseño Web Responsivo en freeCodeCamp",
+        "url": "https://codepen.io/Sil_Bel16/pen/MWrjpOo"
+        },
+        {
+        "img": "assets/project-portfolio.png",
+        "title": "Personal Portfolio",
+        "description":"Certificación Diseño Web Responsivo en freeCodeCamp",
+        "url": "https://codepen.io/Sil_Bel16/pen/xxpNpzE"
+        }
+    ],
+    "mail": "silvinabelcastro@gmail.com",
+    "city": "Ciudad Autónoma de Buenos Aires, Argentina"
 }
-
-

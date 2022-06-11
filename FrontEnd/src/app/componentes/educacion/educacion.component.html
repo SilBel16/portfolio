@@ -2,43 +2,15 @@
     <div class="container-fluid">
     <h2>Educación</h2>
     <div class="divider oscuro"></div>
-    
-    <div class="table-responsive">
-      <table class="table-borderless">
-        <thead>
-          <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td align="center"><a href="https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa" target="_blank"><img class="educacion-img" src="../../../assets/logo-AP1.jpg" alt="logo Argentina programa"></a></td>
-            <td>Programadora web full stack junior - En proceso</td>
-            <td><a href="https://agenciadeaprendizaje.bue.edu.ar/curso/testing-automatizado-y-qa-control-de-calidad-de-software-cac-4-0/" target="_blank"><img class="educacion-img" src="../../../assets/codo_a_codo_logo.jpg" alt="logo codo a codo"></a></td>
-            <td>Testing/QA - En proceso</td> 
-          </tr>
-          <tr>
-            <td><a href="https://www.scrumstudy.com/" target="_blank"><img class="educacion-img" src="../../../assets/ScrumStudy-logo.jpg" alt="logo ScrumStudy"></a></td>
-            <td>Scrum Fundamentals Certified (SFC™) Certification - 03/2022</td>
-            <td><a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank"><img class="educacion-img" src="../../../assets/FreeCodeCamp_logo.png" alt="logo freeCodeCamp"></a></td>
-            <td>Diseño Web Responsivo - 04/2022</td>
-          </tr>
-          <tr>  
-            <td><a href="https://www.sololearn.com/home" target="_blank"><img class="educacion-img" src="../../../assets/sololearn_logo.png" alt="logo Sololearn"></a></td>
-            <td>Responsive Web Design course - 04/2022 <br>
-              Web Development Fundamentals course - 02/2022 <br>
-              CSS course - 02/2022 <br>
-              HTML course - 01/2022</td>
-              <td><a href="https://conectaempleo-formacion.fundaciontelefonica.com/argentina" target="_blank"><img class="educacion-img" src="../../../assets/logo-fundacionTelefonica.jpg" alt="logo Fundación telefónica"></a></td>
-              <td>Gestión de Proyectos con Metodologías Ágiles y Enfoques Lean - 02/2022<br>
-                Ciberseguridad en el Entorno Educativo (30 hs.) - 02/2022
-              </td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="row">
+            <div *ngFor="let educacion of educacionList" align="center" class="estudio col-xs-6 col-sm-6 col-md-2 col-lg-2">
+              <a href="{{educacion.url}}" target="_blank">
+              <img class="educacion-img img-fluid" src="{{educacion.img}}" alt="logo Argentina programa">
+              </a>
+              <div class="estudio col-xs-6 col-sm-6 col-md-10 col-lg-10">
+              <p>{{educacion.title}}<br>{{educacion.end}}</p> 
+            </div>
+            </div> 
     </div>
     </div>
     </section>

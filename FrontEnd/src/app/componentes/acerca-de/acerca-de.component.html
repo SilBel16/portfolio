@@ -1,4 +1,7 @@
 <section id="acerca_de">
+  <div class="container-fluid">
+    <h2>Acerca de mi</h2>
+    <div class="divider oscuro"></div>
       <div class="row">
         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1 text-left align-top btn-edit" onclick="cambiar_parrafo()">
           <a href="#" class="btn-left">
@@ -9,7 +12,7 @@
           <h1>{{miPortfolio.name}}</h1> 
           <h2><em>{{miPortfolio.position}}</em></h2>
           <div>
-            <p id="text-acercade">{{miPortfolio.acerca}}</p>
+            <p id="text-acercade">{{miPortfolio.aboutMe}}</p>
           </div>
           <div>
             <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
@@ -20,5 +23,6 @@
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
           <img class="img-fluid" id="foto_perfil" src="../../../assets/Perfil-chica.jpg" alt="foto de perfil Silvina">
         </div>
-      </div>              
+      </div>
+  </div>              
   </section>
