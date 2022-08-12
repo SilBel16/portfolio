@@ -12,6 +12,8 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 import { FooterComponent } from './componentes/footer/footer.component';
 import { PortfolioService} from './service/portfolio.service';
 import { HttpClientModule } from '@angular/common/http';
+import { InicioComponent } from './componentes/inicio/inicio.component';
+import { LoginComponent } from './componentes/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { HttpClientModule } from '@angular/common/http';
     EducacionComponent,
     SkillsComponent,
     ProyectosComponent,
-    FooterComponent
+    FooterComponent,
+    InicioComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
