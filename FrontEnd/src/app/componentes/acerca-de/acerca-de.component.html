@@ -9,19 +9,19 @@
           </a>
         </div> -->
         <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 text-center align-self-center">
-          <h1>{{miPortfolio.name}}</h1> 
-          <h2><em>{{miPortfolio.position}}</em></h2>
+          <h1>{{persona.nombre}}</h1> 
+          <h2><em>{{persona.apellido}}</em></h2>
           <div>
-            <p id="text-acercade">{{miPortfolio.aboutMe}}</p>
+            <p id="text-acercade">{{persona.img}}</p>
           </div>
           <!-- <div>
             <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
           </div> -->
         <!--  <input type="file" id="file1" onchange="showfile(this)"> -->
-          <a download="{{miPortfolio.cv}}" href="{{miPortfolio.cv}}"><button class="download-cv button">Download CV</button></a>
+          <a download="" href=""><button class="download-cv button">Download CV</button></a>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-          <img class="img-fluid" id="foto_perfil" [src]="miPortfolio.profileImg" alt="foto de perfil Silvina">
+          <img class="img-fluid" id="foto_perfil" [src]="" alt="foto de perfil Silvina">
         </div>
       </div>
   </div>              
