@@ -3,20 +3,20 @@
     <h2>Acerca de mi</h2>
     <div class="divider oscuro"></div>
       <div class="row">
-        <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1 text-left align-top btn-edit" onclick="cambiar_parrafo()">
+        <!-- <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1 text-left align-top btn-edit" onclick="cambiar_parrafo()">
           <a href="#" class="btn-left">
             <i class="fa fa-edit"></i>
           </a>
-        </div>
+        </div> -->
         <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 text-center align-self-center">
           <h1>{{miPortfolio.name}}</h1> 
           <h2><em>{{miPortfolio.position}}</em></h2>
           <div>
             <p id="text-acercade">{{miPortfolio.aboutMe}}</p>
           </div>
-          <div>
+          <!-- <div>
             <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
-          </div>
+          </div> -->
         <!--  <input type="file" id="file1" onchange="showfile(this)"> -->
           <a download="{{miPortfolio.cv}}" href="{{miPortfolio.cv}}"><button class="download-cv button">Download CV</button></a>
         </div>
