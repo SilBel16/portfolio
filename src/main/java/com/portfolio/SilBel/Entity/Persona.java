@@ -33,6 +33,9 @@ public class Persona {
     @Size(min = 1, max = 500, message = "No cumple con longitud")
     private String aboutMe;
     
+    @Size(min = 1, max = 500, message = "No cumple con longitud")
+    private String cvFile;
+    
     @Size(min = 1, max = 50, message = "No cumple con longitud")
     private String mail;
     
@@ -44,4 +47,5 @@ public class Persona {
     
     @Size(min = 1, max = 50, message = "No cumple con longitud")
     private String country;
+
 }   

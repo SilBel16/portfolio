@@ -4,6 +4,7 @@ import com.portfolio.SilBel.Entity.Persona;
 import com.portfolio.SilBel.Interface.IPersonaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,19 +25,22 @@ public class PersonaController {
     return iPersonaService.getPersona();
     }
    
+    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("personas/crear")
     public String createPersona(@RequestBody Persona persona) {
         iPersonaService.savePersona(persona);
         return "Persona creada exitosamente";
     }
     
+    @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping("/personas/borrar/{id}")
     public String deletePersona(@PathVariable Long id) {
     iPersonaService.deletePersona(id);
     return "Persona eliminada exitosamente";
     }
     
-    //URL:puerto/personas/editar/nombre&apellido&img
+    
+    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/personas/editar/{id}")
     public Persona editPersona(@PathVariable Long id,
                                @RequestParam("nombre") String nuevoNombre,
@@ -44,10 +48,11 @@ public class PersonaController {
                                @RequestParam("profileImg") String nuevoprofileImg,
                                @RequestParam("position") String nuevoposition,
                                @RequestParam("aboutMe") String nuevoaboutMe,
+                               @RequestParam("cvFile") String nuevocvFile,    
                                @RequestParam("mail") String nuevoMail,
                                @RequestParam("phone") String nuevoPhone,
                                @RequestParam("city") String nuevoCity,
-                               @RequestParam("country") String nuevoCountry)  {
+                               @RequestParam("country") String nuevoCountry) {  
                                                                                
     Persona persona = iPersonaService.findPersona(id);
     persona.setNombre(nuevoNombre);
@@ -55,6 +60,7 @@ public class PersonaController {
     persona.setProfileImg(nuevoprofileImg);
     persona.setPosition(nuevoposition);
     persona.setAboutMe(nuevoaboutMe);
+    persona.setCvFile(nuevocvFile);
     persona.setMail(nuevoMail);
     persona.setPhone(nuevoPhone);
     persona.setCity(nuevoCity);
